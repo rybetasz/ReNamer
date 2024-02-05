@@ -139,7 +139,6 @@ isimnew64 = r"Files\\64.png"
 #TKINTER
 wsmenu =Tk()
 wsmenu.geometry('512x256')
-wsmenu.configure(bg='Black')
 wsmenu.title('ReNamer by rybetasz')
 wsmenu.iconbitmap(r'matlist.ico')
 img = PhotoImage(file="menu.png")
@@ -150,7 +149,7 @@ Label(
 
 #DEFLER
 def hakkinda():
-     messagebox.showinfo('About','ReNamer by rybetasz')
+     messagebox.showinfo('About','ReNamer V1.1 by rybetasz')
 
 def dosyalariduzenle():
   os.rename(isim1, isimnew1)
@@ -217,7 +216,7 @@ def dosyalariduzenle():
   os.rename(isim62, isimnew62)
   os.rename(isim63, isimnew63)
   os.rename(isim64, isimnew64)
-  time.sleep(1.70)
+  time.sleep(1.40)
   messagebox.showinfo('Edit Files','Done!')
 
  
@@ -231,6 +230,17 @@ def vinylduzenle():
         src =f"{folder}/{orjarac}.dds"
         dst =f"{folder}/{xname}.dds"
         os.rename(src, dst)
+
+def isimduzenle():
+   
+   isimxname = input('Enter the name: ')
+   isimxname2 = input('Enter the Name: ')
+   folder = "Dosya"
+   for count, filename in enumerate(os.listdir(folder)):
+   dst = f"{isimxname}"
+   src = f"{folder}/{isimxname2}"
+   dst = f"{folder}/{
+   
 
 
 
